@@ -1,11 +1,9 @@
-import { Link } from 'react-router-dom';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
-import cls from './LangSwitcher.module.scss';
 import Button, { ThemeButton } from '../Button/Button';
 
 interface LangSwitcherProps {
-  className?: string;
+    className?: string;
 }
 
 export const LangSwitcher = ({ className }: LangSwitcherProps) => {
@@ -17,7 +15,7 @@ export const LangSwitcher = ({ className }: LangSwitcherProps) => {
 
     return (
         <Button
-            className={classNames(cls.navbar, {}, [className])}
+            className={classNames('', {}, [className])}
             theme={ThemeButton.CLEAR}
             onClick={toogle}
         >
