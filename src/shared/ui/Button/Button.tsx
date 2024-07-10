@@ -1,18 +1,14 @@
-import { Link } from 'react-router-dom';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { ButtonHTMLAttributes, FC } from 'react';
 import cls from './Button.module.scss';
 
 export enum ThemeButton {
-  CLEAR = 'clear',
-  PRIMARY = 'primary',
-  SECONDARY = 'secondary',
-  OUTLINE = 'outline',
+    CLEAR = 'clear',
 }
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  className?: string;
-  theme?: ThemeButton;
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>{
+    className?: string;
+    theme?: ThemeButton;
 }
 
 export const Button: FC<ButtonProps> = (props) => {
@@ -26,12 +22,10 @@ export const Button: FC<ButtonProps> = (props) => {
     return (
         <button
             type="button"
-            className={classNames(cls.navbar, {}, [className, cls[theme]])}
+            className={classNames(cls.Button, { [cls[theme]]: true }, [className])}
             {...otherProps}
         >
             {children}
         </button>
     );
 };
-
-export default Button;

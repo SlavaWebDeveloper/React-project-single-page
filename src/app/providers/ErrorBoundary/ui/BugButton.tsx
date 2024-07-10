@@ -1,25 +1,25 @@
-import Button from 'shared/ul/Button/Button';
+import { Button } from 'shared/ui/Button/Button';
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-// компонен для тестирования
+// Компонент для тестирования ErrorBoundary
 export const BugButton = () => {
     const [error, setError] = useState(false);
-    const onThrow = () => setError(true);
     const { t } = useTranslation();
+
+    const onThrow = () => setError(true);
 
     useEffect(() => {
         if (error) {
             throw new Error();
         }
     }, [error]);
+
     return (
         <Button
             onClick={onThrow}
         >
-            {t('Кнопка ошибки')}
+            {t('throw error')}
         </Button>
     );
 };
-
-export default BugButton;
