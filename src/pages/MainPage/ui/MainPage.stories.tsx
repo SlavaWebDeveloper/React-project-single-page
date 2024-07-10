@@ -4,11 +4,11 @@ import { Theme } from 'app/providers/ThemeProvider';
 import MainPage from './MainPage';
 
 export default {
-  title: 'pages/MainPage',
-  component: MainPage,
-  argTypes: {
-    backgroundColor: { control: 'color' },
-  },
+    title: 'pages/MainPage',
+    component: MainPage,
+    argTypes: {
+        backgroundColor: { control: 'color' },
+    },
 } as ComponentMeta<typeof MainPage>;
 
 const Template: ComponentStory<typeof MainPage> = (args) => <MainPage />;
@@ -19,4 +19,4 @@ Normal.args = {};
 
 export const Dark = Template.bind({});
 Dark.args = {};
-Dark.decorators = [ThemeDecorator(Theme.DARK)]
+Dark.decorators = [ThemeDecorator(Theme.DARK)];
