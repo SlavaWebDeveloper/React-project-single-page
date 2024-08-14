@@ -16,7 +16,7 @@
 	// 	"description": "Log output to console"
 	// }
 
-	"React Navbar Component": {
+	"React snippet fc": {
   "prefix": "rc",
   "body": [
     "import { classNames } from 'shared/lib/classNames/classNames';",
@@ -35,9 +35,17 @@
     "",
     "export default ${TM_FILENAME_BASE};"
   ],
-  "description": "Creates a React Navbar component with TypeScript"
-}
-
-	
-
+    "description": "Creates a React snippet fc with TypeScript"
+  },
+  "Test Suite Template": {
+    "prefix": "ts",
+    "body": [
+      "describe('${TM_FILENAME_BASE}', () => {",
+      "\ttest('$1', () => {",
+      "\t\texpect($2).toEqual($3);",
+      "\t});",
+      "});"
+    ],
+    "description": "Creates a test suite with a single test in Jest"
+  }
 }

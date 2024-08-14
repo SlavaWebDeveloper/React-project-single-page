@@ -7,10 +7,10 @@ import cls from './Modal.module.scss';
 import Portal from '../Portal/Portal';
 
 interface ModalProps {
-  className?: string;
-  children?: ReactNode;
-  isOpen?: boolean;
-  onClose?: () => void;
+    className?: string;
+    children?: ReactNode;
+    isOpen?: boolean;
+    onClose?: () => void;
 }
 
 const ANIMATION_DELAY = 300;
@@ -24,20 +24,20 @@ export const Modal = (props: ModalProps) => {
     } = props;
 
     const [isClosing, setIsClosing] = useState(false);
-    const timeRef = useRef<ReturnType<typeof setTimeout>>();
+    const timerRef = useRef<ReturnType<typeof setTimeout>>();
     const { theme } = useTheme();
 
     const closeHandler = useCallback(() => {
         if (onClose) {
             setIsClosing(true);
-            timeRef.current = setTimeout(() => {
+            timerRef.current = setTimeout(() => {
                 onClose();
                 setIsClosing(false);
             }, ANIMATION_DELAY);
         }
     }, [onClose]);
 
-    const onKyeDown = useCallback((e: KeyboardEvent) => {
+    const onKeyDown = useCallback((e: KeyboardEvent) => {
         if (e.key === 'Escape') {
             closeHandler();
         }
@@ -49,13 +49,14 @@ export const Modal = (props: ModalProps) => {
 
     useEffect(() => {
         if (isOpen) {
-            window.addEventListener('keydown', onKyeDown);
+            window.addEventListener('keydown', onKeyDown);
         }
+
         return () => {
-            clearTimeout(timeRef.current);
-            window.removeEventListener('keydown', onKyeDown);
+            clearTimeout(timerRef.current);
+            window.removeEventListener('keydown', onKeyDown);
         };
-    }, [isOpen, onKyeDown]);
+    }, [isOpen, onKeyDown]);
 
     const mods: Record<string, boolean> = {
         [cls.opened]: isOpen,
