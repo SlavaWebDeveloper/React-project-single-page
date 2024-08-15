@@ -1,14 +1,16 @@
 {
-  "Тестовый пример": "Test example",
-  "Перевод": "Translate",
-  "Главная страница": "Main page",
-  "Язык": "English",
-  "новый перевод": "new translate",
-  "Страница не найдена": "Page not found",
-  "Произошла непредвиденная ошибка": "404 error",
-  "Обновить страницу": "Update page",
-  "throw error": "throw error",
-  "Короткий язык": "En",
+  "decrement": "decrement",
   "increment": "increment",
-  "decrement": "decrement"
+  "throw error": "throw error",
+  "Введите username": "Enter username",
+  "Введите пароль": "Enter password",
+  "Войти": "Open",
+  "Главная": "Main",
+  "Главная страница": "Main page",
+  "О сайте": "About site",
+  "Обновить страницу": "Refresh the page",
+  "Переключить": "Switch",
+  "Произошла непредвиденная ошибка": "404 error",
+  "Страница не найдена": "404 error",
+  "Язык": "Language"
 }

@@ -1,4 +1,5 @@
 {
+  "": "",
   " Lorem ipsum dolor sit amet consectetur adipisicing elit": {
     " Atque quo modi, qui sunt quam tenetur, sed doloremque vitae officia corporis nihil impedit": {
       "Modi illo debitis odio magni sit dolores sunt": {
@@ -9,6 +10,10 @@
   "decrement": "decrement",
   "increment": "increment",
   "throw error": "throw error",
+  "Введите ": "Введите ",
+  "Введите gfhjkm": "Введите gfhjkm",
+  "Введите username": "Введите username",
+  "Введите пароль": "Введите пароль",
   "Войти": "Войти",
   "Главная": "Главная",
   "Главная страница": "Главная страница",
