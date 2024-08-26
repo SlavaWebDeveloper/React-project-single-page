@@ -4,6 +4,8 @@
   "forma-avtorizacii": "",
   "increment": "increment",
   "throw error": "throw error",
+  "Ваше имя": "",
+  "Ваше фамилия": "",
   "Введите username": "Enter username",
   "Введите пароль": "Enter password",
   "Войти": "Open",
@@ -15,6 +17,8 @@
   "Обновить страницу": "Refresh the page",
   "Переключить": "Switch",
   "Произошла непредвиденная ошибка": "404 error",
+  "Профиль": "",
+  "Редактировать": "",
   "Страница не найдена": "404 error",
   "Форма авторизации": "Authorization form",
   "Язык": "Language"
