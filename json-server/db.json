@@ -102,6 +102,60 @@
       "text": "some comment 3",
       "articlesId": "1",
       "userId": "1"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "123",
+      "id": "zvTban8"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "123123",
+      "id": "JaTzHqR"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "12312313212321",
+      "id": "y68BJfa"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "12312313212321123123",
+      "id": "VNSKbdo"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "12312313212321123123dasdas",
+      "id": "HXpxSaH"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "12312313212321123123dasdas",
+      "id": "neS7jGK"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "09876542312`",
+      "id": "HEAxItw"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "new",
+      "id": "ssf4DxA"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "123",
+      "id": "sKVRXIt"
     }
   ],
   "users": [
@@ -120,14 +174,28 @@
       "avatar": "https://cdn.pixabay.com/photo/2024/03/11/10/45/boy-8626374_1280.jpg"
     }
   ],
-  "profile": {
-    "first": "Вячеслав",
-    "lastname": "Сидоров",
-    "age": 24,
-    "currency": "RUB",
-    "country": "Russia",
-    "city": "Moscow",
-    "username": "admin",
-    "avatar": "https://cdn.pixabay.com/photo/2024/03/11/10/45/boy-8626374_1280.jpg"
-  }
+  "profile": [
+    {
+      "id": "1",
+      "first": "Вячеслав",
+      "lastname": "Сидоров",
+      "age": 24,
+      "currency": "RUB",
+      "country": "Russia",
+      "city": "Moscow",
+      "username": "admin",
+      "avatar": "https://cdn.pixabay.com/photo/2024/03/11/10/45/boy-8626374_1280.jpg"
+    },
+    {
+      "id": "2",
+      "first": "Тест 2",
+      "lastname": "Сидоров",
+      "age": 24,
+      "currency": "RUB",
+      "country": "Russia",
+      "city": "Moscow",
+      "username": "admin123",
+      "avatar": "https://hsto.org/r/w1560/getpro/habr/post_images/d56/a02/ffc/d56a02ffc62949b42904ca00c63d8cc1.png"
+    }
+  ]
 }
