@@ -24,6 +24,11 @@ const article: Article = {
     views: 1022,
     createdAt: '26.02.2022',
     type: [ArticleType.IT],
+    user: {
+        id: '1',
+        username: 'admin',
+        avatar: 'https://cdn.pixabay.com/photo/2024/03/11/10/45/boy-8626374_1280.jpg',
+    },
     blocks: [
         {
             id: '1',
