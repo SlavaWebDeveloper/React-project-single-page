@@ -7,17 +7,13 @@ import {
 } from '../../model/types/article';
 import cls from './ArticleListItem.module.scss';
 
-interface ArticleListItemSteletonProps {
-  className?: string;
-  view: ArticleView;
-
+interface ArticleListItemSkeletonProps {
+    className?: string;
+    view: ArticleView;
 }
 
-export const ArticleListItemSteleton = memo((props: ArticleListItemSteletonProps) => {
-    const {
-        className,
-        view,
-    } = props;
+export const ArticleListItemSkeleton = memo((props: ArticleListItemSkeletonProps) => {
+    const { className, view } = props;
 
     if (view === ArticleView.BIG) {
         return (

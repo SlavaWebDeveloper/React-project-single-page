@@ -7,7 +7,7 @@ import EyeIcon from 'shared/assets/icons/eye-20-20.svg';
 import { Card } from 'shared/ui/Card/Card';
 import { Avatar } from 'shared/ui/Avatar/Avatar';
 import { Button, ButtonTheme } from 'shared/ui/Button/Button';
-import { Route, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { RoutePath } from 'shared/config/routeConfig/routeConfig';
 import {
     Article, ArticleBlockType, ArticleTextBlock, ArticleView,
@@ -19,7 +19,6 @@ interface ArticleListItemProps {
     className?: string;
     article: Article;
     view: ArticleView;
-
 }
 
 export const ArticleListItem = memo((props: ArticleListItemProps) => {
@@ -39,7 +38,7 @@ export const ArticleListItem = memo((props: ArticleListItemProps) => {
     const types = <Text text={article.type.join(', ')} className={cls.types} />;
     const views = (
         <>
-            <Text text={String(article.views)} className={cls.vies} />
+            <Text text={String(article.views)} className={cls.views} />
             <Icon Svg={EyeIcon} />
         </>
     );
@@ -70,7 +69,6 @@ export const ArticleListItem = memo((props: ArticleListItemProps) => {
                         {views}
                     </div>
                 </Card>
-
             </div>
         );
     }

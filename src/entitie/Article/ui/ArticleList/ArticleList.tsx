@@ -4,11 +4,11 @@ import { memo } from 'react';
 import { Article, ArticleView } from '../../model/types/article';
 import cls from './ArticleList.module.scss';
 import { ArticleListItem } from '../ArticleListItem/ArticleListItem';
-import { ArticleListItemSteleton } from '../ArticleListItem/ArticleListItemSteleton';
+import { ArticleListItemSkeleton } from '../ArticleListItem/ArticleListItemSteleton';
 
 interface ArticleListProps {
     className?: string;
-    articles: Article[];
+    articles: Article[]
     isLoading?: boolean;
     view?: ArticleView;
 }
@@ -17,7 +17,7 @@ const getSkeletons = (view: ArticleView) => new Array(view === ArticleView.SMALL
     .fill(0)
     .map((item, index) => (
         // eslint-disable-next-line react/no-array-index-key
-        <ArticleListItemSteleton className={cls.card} view={view} key={index} />
+        <ArticleListItemSkeleton className={cls.card} key={index} view={view} />
     ));
 
 export const ArticleList = memo((props: ArticleListProps) => {
@@ -28,16 +28,6 @@ export const ArticleList = memo((props: ArticleListProps) => {
         view = ArticleView.SMALL,
     } = props;
     const { t } = useTranslation();
-
-    if (isLoading) {
-        return (
-            <div className={classNames(cls.ArticleList, {}, [className, cls[view]])}>
-                {
-                    getSkeletons(view)
-                }
-            </div>
-        );
-    }
 
     const renderArticle = (article: Article) => (
         <ArticleListItem
@@ -53,6 +43,7 @@ export const ArticleList = memo((props: ArticleListProps) => {
             {articles.length > 0
                 ? articles.map(renderArticle)
                 : null}
+            {isLoading && getSkeletons(view)}
         </div>
     );
 });
