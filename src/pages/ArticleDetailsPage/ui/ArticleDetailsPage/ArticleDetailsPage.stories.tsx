@@ -27,7 +27,6 @@ const article: Article = {
     user: {
         id: '1',
         username: 'admin',
-        avatar: 'https://cdn.pixabay.com/photo/2024/03/11/10/45/boy-8626374_1280.jpg',
     },
     blocks: [
         {

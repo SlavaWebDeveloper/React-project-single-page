@@ -308,7 +308,9 @@
       "views": 890,
       "createdAt": "18.06.2024",
       "userId": "2",
-      "type": ["IT"],
+      "type": [
+        "IT"
+      ],
       "blocks": [
         {
           "id": "1",
@@ -342,7 +344,9 @@
       "views": 640,
       "createdAt": "15.05.2024",
       "userId": "2",
-      "type": ["IT"],
+      "type": [
+        "IT"
+      ],
       "blocks": [
         {
           "id": "1",
@@ -596,6 +600,12 @@
       "userId": "2",
       "text": "123",
       "id": "sKVRXIt"
+    },
+    {
+      "articleId": "2",
+      "userId": "2",
+      "text": "123",
+      "id": "8bzdfSS"
     }
   ],
   "users": [

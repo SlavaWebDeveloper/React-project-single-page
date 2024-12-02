@@ -27,6 +27,13 @@ Error.args = {
     theme: TextTheme.ERROR,
 };
 
+export const Inverted = Template.bind({});
+Inverted.args = {
+    title: 'Title lorem ipsun',
+    text: 'Description Description Description Description',
+    theme: TextTheme.INVERTED,
+};
+
 export const onlyTitle = Template.bind({});
 onlyTitle.args = {
     title: 'Title lorem ipsun',
