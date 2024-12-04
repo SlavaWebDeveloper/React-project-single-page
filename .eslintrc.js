@@ -23,6 +23,7 @@ module.exports = {
         '@typescript-eslint',
         'i18next',
         'react-hooks',
+        'slava-plugin',
     ],
     rules: {
         'react/jsx-indent': [2, 4],
@@ -63,6 +64,7 @@ module.exports = {
         'react-hooks/exhaustive-deps': 'error',
         'no-param-reassign': 'off',
         'no-undef': 'off',
+        'slava-plugin/path-checker': 'error',
     },
     globals: {
         __IS_DEV__: true,
