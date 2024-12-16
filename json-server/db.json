@@ -625,14 +625,14 @@
       "id": "1",
       "username": "admin",
       "password": "123",
-      "role": "ADMIN",
+      "roles": ["ADMIN"],
       "avatar": "https://cdn.pixabay.com/photo/2024/03/11/10/45/boy-8626374_1280.jpg"
     },
     {
       "id": "2",
       "username": "user",
       "password": "123",
-      "role": "USER",
+      "roles": ["USER"],
       "avatar": "https://cdn.pixabay.com/photo/2024/03/11/10/45/boy-8626374_1280.jpg"
     }
   ],
