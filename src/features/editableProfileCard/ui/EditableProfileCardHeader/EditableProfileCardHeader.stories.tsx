@@ -19,6 +19,9 @@ Normal.args = {};
 Normal.decorators = [
     StoreDecorator({}),
 ];
+Normal.decorators = [
+    StoreDecorator({}),
+];
 
 export const Dark = Template.bind({});
 Dark.args = {};

@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { memo } from 'react';
 import { ArticleList } from 'entitie/Article';
 import { Text, TextSize } from 'shared/ui/Text/Text';
-import { HStack } from 'shared/ui/Stack';
+import { VStack } from 'shared/ui/Stack';
 import { useArticleRecommendationsList } from '../../api/articleRecommendationsApi';
 
 interface ArticleRecommendationsListProps {
@@ -20,7 +20,7 @@ export const ArticleRecommendationsList = memo((props: ArticleRecommendationsLis
     }
 
     return (
-        <HStack gap="8" className={classNames('', {}, [className])}>
+        <VStack gap="8" className={classNames('', {}, [className])}>
             <Text
                 size={TextSize.L}
                 title={t('Рекомендуем')}
@@ -30,6 +30,6 @@ export const ArticleRecommendationsList = memo((props: ArticleRecommendationsLis
                 target="_blank"
                 virtualized={false}
             />
-        </HStack>
+        </VStack>
     );
 });
