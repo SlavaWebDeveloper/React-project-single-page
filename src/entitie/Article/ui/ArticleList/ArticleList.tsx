@@ -1,15 +1,16 @@
-import { classNames } from 'shared/lib/classNames/classNames';
-import { useTranslation } from 'react-i18next';
 import { HTMLAttributeAnchorTarget, memo } from 'react';
-import { Text, TextSize } from 'shared/ui/Text/Text';
+import { useTranslation } from 'react-i18next';
 import {
-    AutoSizer, List, ListRowProps, WindowScroller,
+    List, ListRowProps, WindowScroller,
 } from 'react-virtualized';
+import { classNames } from 'shared/lib/classNames/classNames';
+import { Text, TextSize } from 'shared/ui/Text/Text';
 import { PAGE_ID } from 'widgets/Page/Page';
-import { Article, ArticleView } from '../../model/types/article';
-import cls from './ArticleList.module.scss';
+import { ArticleView } from '../../model/const/const';
+import { Article } from '../../model/types/article';
 import { ArticleListItem } from '../ArticleListItem/ArticleListItem';
 import { ArticleListItemSkeleton } from '../ArticleListItem/ArticleListItemSteleton';
+import cls from './ArticleList.module.scss';
 
 interface ArticleListProps {
     className?: string;

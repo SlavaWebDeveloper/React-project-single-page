@@ -1,5 +1,5 @@
-import { Currency } from 'entitie/Currency/model/types/currency';
-import { Country } from 'entitie/Country/model/types/country';
+import { Currency } from 'entitie/Currency';
+import { Country } from 'entitie/Country';
 
 export interface Profile {
 	id?: string;
