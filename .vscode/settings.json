@@ -15,9 +15,9 @@
           "fileName": "<FTName>.stories.tsx",
           "template": [
             "import { ComponentMeta, ComponentStory } from '@storybook/react';",
-            "import { StoreDecorator } from 'shared/config/storybook/StoreDecorator/StoreDecorator';",
-            "import { Theme } from 'app/providers/ThemeProvider';",
-            "import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';",
+            "import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator/StoreDecorator';",
+            "import { Theme } from '@/app/providers/ThemeProvider';",
+            "import { ThemeDecorator } from '@/shared/config/storybook/ThemeDecorator/ThemeDecorator';",
             "import { <FTName> } from './<FTName>';",
             "",
             "export default {",
@@ -47,7 +47,7 @@
         {
           "fileName": "<FTName>.tsx",
           "template": [
-            "import { classNames } from 'shared/lib/classNames/classNames';",
+            "import { classNames } from '@/shared/lib/classNames/classNames';",
             "import { useTranslation } from 'react-i18next';",
             "import { memo } from 'react';",
             "import cls from './<FTName>.module.scss';",

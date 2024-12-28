@@ -7,10 +7,10 @@ import { mapDirectionClass } from '../../styles/const';
 import popupCls from '../../styles/popups.module.scss';
 
 interface PopoverProps {
-	className?: string;
-	trigger: ReactNode;
-	direction?: DropdownDirection;
-	children: ReactNode;
+    className?: string;
+    trigger: ReactNode;
+    direction?: DropdownDirection;
+    children: ReactNode;
 }
 
 export function Popover(props: PopoverProps) {
@@ -22,10 +22,15 @@ export function Popover(props: PopoverProps) {
 
     return (
         <HPopover className={classNames(cls.Popover, {}, [className, popupCls.popup])}>
-            <HPopover.Button className={popupCls.trigger}>
+            <HPopover.Button
+                className={popupCls.trigger}
+                as="div"
+            >
                 {trigger}
             </HPopover.Button>
-            <HPopover.Panel className={classNames(cls.panel, {}, menuClasses)}>
+            <HPopover.Panel
+                className={classNames(cls.panel, {}, menuClasses)}
+            >
                 {children}
             </HPopover.Panel>
         </HPopover>
