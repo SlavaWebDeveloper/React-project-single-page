@@ -5,7 +5,7 @@ import { ThemeDecorator } from '@/shared/config/storybook/ThemeDecorator/ThemeDe
 import { NotificationButton } from './NotificationButton';
 
 export default {
-    title: 'shared/NotificationButton',
+    title: 'features/NotificationButton',
     component: NotificationButton,
     argTypes: {
         backgroundColor: { control: 'color' },

@@ -65,7 +65,7 @@ module.exports = {
         'no-param-reassign': 'off',
         'react/no-array-index-key': 'off',
         'no-undef': 'off',
-        'slava-plugin/path-checker': 'error',
+        'slava-plugin/path-checker': ['error', { alias: '@' }],
     },
     globals: {
         __IS_DEV__: true,

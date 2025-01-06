@@ -5,7 +5,7 @@ import { ThemeDecorator } from '@/shared/config/storybook/ThemeDecorator/ThemeDe
 import { RatingCard } from './RatingCard';
 
 export default {
-    title: 'shared/RatingCard',
+    title: 'entitie/RatingCard',
     component: RatingCard,
     argTypes: {
         backgroundColor: { control: 'color' },
@@ -15,14 +15,36 @@ export default {
 const Template: ComponentStory<typeof RatingCard> = (args) => <RatingCard {...args} />;
 
 export const Normal = Template.bind({});
-Normal.args = {};
+Normal.args = {
+    title: 'Оцените статью',
+};
 Normal.decorators = [
+
+    StoreDecorator({}),
+];
+
+export const WithFeedbackNormal = Template.bind({});
+WithFeedbackNormal.args = {
+    rate: 4,
+};
+WithFeedbackNormal.decorators = [
     StoreDecorator({}),
 ];
 
 export const Dark = Template.bind({});
-Dark.args = {};
+Dark.args = {
+    title: 'Оцените статью',
+};
 Dark.decorators = [
+    StoreDecorator({}),
+    ThemeDecorator(Theme.DARK),
+];
+
+export const WithFeedbackDark = Template.bind({});
+WithFeedbackDark.args = {
+    rate: 4,
+};
+WithFeedbackDark.decorators = [
     StoreDecorator({}),
     ThemeDecorator(Theme.DARK),
 ];
