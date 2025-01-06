@@ -1,8 +1,7 @@
 import {
     Menu,
 } from '@headlessui/react';
-import { Fragment } from 'react/jsx-runtime';
-import { ReactNode } from 'react';
+import { ReactNode, Fragment } from 'react';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { DropdownDirection } from '@/shared/types/ui';
 import cls from './Dropdown.module.scss';
@@ -14,7 +13,7 @@ export interface DropdownItem {
     disabled?: boolean;
     content?: ReactNode;
     onClick?: () => void;
-    href?: string
+    href?: string;
 }
 
 interface DropdownProps {
@@ -40,7 +39,7 @@ export function Dropdown(props: DropdownProps) {
                 {trigger}
             </Menu.Button>
             <Menu.Items className={classNames(cls.menu, {}, menuClasses)}>
-                {items.map((item) => {
+                {items.map((item, index) => {
                     const content = ({ active }: { active: boolean }) => (
                         <button
                             type="button"

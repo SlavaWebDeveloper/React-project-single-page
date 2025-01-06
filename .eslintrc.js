@@ -63,6 +63,7 @@ module.exports = {
         'react-hooks/rules-of-hooks': 'error',
         'react-hooks/exhaustive-deps': 'error',
         'no-param-reassign': 'off',
+        'react/no-array-index-key': 'off',
         'no-undef': 'off',
         'slava-plugin/path-checker': 'error',
     },

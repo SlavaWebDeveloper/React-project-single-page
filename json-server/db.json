@@ -697,5 +697,63 @@
       "username": "admin123",
       "avatar": "https://hsto.org/r/w1560/getpro/habr/post_images/d56/a02/ffc/d56a02ffc62949b42904ca00c63d8cc1.png"
     }
+  ],
+  "article-ratings": [
+    {
+      "id": "1",
+      "rate": 4,
+      "feedback": "Хорошая статья",
+      "userId": "1",
+      "articleId": "1"
+    },
+    {
+      "id": "2",
+      "rate": 4,
+      "feedback": "Хорошая статья",
+      "userId": "1",
+      "articleId": "2"
+    },
+    {
+      "userId": "1",
+      "articleId": "8",
+      "rate": 4,
+      "id": "DzrzTXT"
+    },
+    {
+      "userId": "1",
+      "articleId": "12",
+      "rate": 2,
+      "feedback": "123123",
+      "id": "ixWhOKq"
+    },
+    {
+      "userId": "1",
+      "articleId": "9",
+      "rate": 5,
+      "feedback": "тест",
+      "id": "RQpBm-O"
+    },
+    {
+      "userId": "1",
+      "articleId": "7",
+      "rate": 4,
+      "id": "EeFX-dy"
+    }
+  ],
+  "profile-ratings": [
+    {
+      "id": "1",
+      "rate": 4,
+      "feedback": "Хорошая статья",
+      "userId": "1",
+      "profileId": "1"
+    },
+    {
+      "id": "2",
+      "rate": 4,
+      "feedback": "Хорошая статья",
+      "userId": "1",
+      "profileId": "2"
+    }
   ]
 }
