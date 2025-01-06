@@ -1,9 +1,13 @@
 import { Story } from '@storybook/react';
 import { StateSchema, StoreProvider } from '@/app/providers/StoreProvider';
 import { articleDetailsReducer } from '@/entitie/Article/model/slice/articleDetailsSlice';
+// eslint-disable-next-line slava-plugin/public-api-imports
 import { addCommentFormReducer } from '@/features/addCommentForm/model/slice/addCommentFormSlice';
+// eslint-disable-next-line slava-plugin/public-api-imports
 import { loginReducer } from '@/features/AuthByUsername/model/slice/loginSlice';
+// eslint-disable-next-line slava-plugin/public-api-imports
 import { profileReducer } from '@/features/editableProfileCard/model/slice/profileSlice';
+// eslint-disable-next-line slava-plugin/public-api-imports
 import { articleDetailsPageReducer } from '@/pages/ArticleDetailsPage/model/slice';
 import { ReducersList } from '@/shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
 
