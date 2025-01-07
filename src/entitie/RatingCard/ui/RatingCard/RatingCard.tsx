@@ -93,7 +93,7 @@ export const RatingCard = memo((props: RatingCardProps) => {
                 <Drawer isOpen={isModalOpen} lazy onClose={cancelHandle}>
                     <VStack gap="32">
                         {modalContent}
-                        <Button fillWidth onClick={acceptHandle} size={ButtonSize.L}>
+                        <Button fullWidth onClick={acceptHandle} size={ButtonSize.L}>
                             {t('Отправить')}
                         </Button>
                     </VStack>
