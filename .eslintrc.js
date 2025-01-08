@@ -66,6 +66,13 @@ module.exports = {
         'react/no-array-index-key': 'off',
         'no-undef': 'off',
         'slava-plugin/path-checker': ['error', { alias: '@' }],
+        'slava-plugin/layer-imports': [
+            'error',
+            {
+                alias: '@',
+                ignoreImportPatterns: ['**/StoreProvider', '**/testing'],
+            },
+        ],
         'slava-plugin/public-api-imports': [
             'error',
             {

@@ -2,7 +2,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import { action } from '@storybook/addon-actions';
 import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator/StoreDecorator';
-import { Theme } from '@/app/providers/ThemeProvider';
+import { Theme } from '@/shared/const/theme';
 import { ThemeDecorator } from '@/shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import AddCommentForm from './AddCommentForm';
 

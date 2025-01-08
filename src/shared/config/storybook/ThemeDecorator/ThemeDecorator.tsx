@@ -1,6 +1,7 @@
 import { Story } from '@storybook/react';
-import React from 'react';
-import { Theme, ThemeProvider } from '@/app/providers/ThemeProvider';
+// eslint-disable-next-line slava-plugin/layer-imports
+import { ThemeProvider } from '@/app/providers/ThemeProvider';
+import { Theme } from '@/shared/const/theme';
 
 export const ThemeDecorator = (theme: Theme) => (StoryComponent: Story) => (
     <ThemeProvider initialTheme={theme}>
