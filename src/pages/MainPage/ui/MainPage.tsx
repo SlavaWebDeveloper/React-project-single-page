@@ -1,8 +1,6 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Page } from '@/widgets/Page';
-import { StarRating } from '@/shared/ui/StarRating';
-import { RatingCard } from '@/entitie/RatingCard';
 
 const MainPage = () => {
     const { t } = useTranslation();
