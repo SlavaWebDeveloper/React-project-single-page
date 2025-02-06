@@ -7,7 +7,7 @@
 
 # jobs:
 #   pipeline:
-#     runs-on: reactPage-latest
+#     runs-on: ubuntu-latest
 #     strategy:
 #       matrix:
 #         node-version: [17.x]
@@ -61,7 +61,7 @@ concurrency:
   cancel-in-progress: true
 jobs:
   build-and-ui-testing:
-    runs-on: reactPage-latest
+    runs-on: ubuntu-latest
     concurrency: ci-${{ github.ref }}
     environment:
       name: github-pages
@@ -103,7 +103,7 @@ jobs:
         uses: actions/deploy-pages@v1
 
   checks:
-    runs-on: reactPage-latest
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         node-version: [ 17.x ]
